@@ -9,15 +9,14 @@ public class TestSolution {
 		 * "........." }; char[][] board = new char[9][9]; for (int i = 0; i <
 		 * 9; i++) { board [i] = array[i].toCharArray(); }
 		 */
-		//Solution sol = new Solution();
-		LRUCache cache = new LRUCache(2);
-		System.out.println(cache.get(2));
-		cache.set(2,6);
-		System.out.println(cache.get(1));
-		cache.set(1,5);
-		cache.set(1,2);
-		System.out.println(cache.get(1));
-		System.out.println(cache.get(2));
+		AnagramsSolution sol = new AnagramsSolution();
+		/*
+		 * LRUCache cache = new LRUCache(2); System.out.println(cache.get(2));
+		 * cache.set(2,6); System.out.println(cache.get(1)); cache.set(1,5);
+		 * cache.set(1,2); System.out.println(cache.get(1));
+		 * System.out.println(cache.get(2));
+		 */
+		System.out.println(sol.anagrams(new String[]{"","",""}));
 		// System.out.println(sol.isValidSudoku(board));
 		// System.out.println(sol.isPalindrome("aA"));
 		// System.out.println(sol.search(new int[]{1,3,5}, 1));
