@@ -3,7 +3,7 @@ package com.javawarriors.leetcode;
 import java.util.ArrayList;
 import java.util.Arrays;
 
-public class CombinationSumSolution {
+public class CombinationSum2Solution{
 	public ArrayList<ArrayList<Integer>> combinationSum2(int[] num, int target) {
 		ArrayList<ArrayList<Integer>> sol = new ArrayList<ArrayList<Integer>>();
 		ArrayList<Integer> current = new ArrayList<Integer>();
@@ -19,14 +19,14 @@ public class CombinationSumSolution {
 			return false;
 		}
 		if (target == 0) {
-			if (!sol.contains(current)) {
+			if(!sol.contains(current)){
 				ArrayList<Integer> validSubset = new ArrayList<Integer>(
 						current.size());
 				for (Integer i : current) {
 					validSubset.add(i);
 				}
 				sol.add(validSubset);
-			}
+			}			
 			return true;
 		}
 		ArrayList<Integer> current2 = new ArrayList<Integer>(current.size());
@@ -34,11 +34,9 @@ public class CombinationSumSolution {
 			current2.add(i);
 		}
 		current2.add(num[index]);
-		boolean center = computeSubsetSum(num, target - num[index], sol,
-				current2, index);
 		boolean left = computeSubsetSum(num, target - num[index], sol,
 				current2, index + 1);
 		boolean right = computeSubsetSum(num, target, sol, current, index + 1);
-		return left || center || right;
+		return left || right;
 	}
 }
