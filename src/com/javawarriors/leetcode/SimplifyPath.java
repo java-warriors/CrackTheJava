@@ -1,6 +1,6 @@
 package com.javawarriors.leetcode;
 
-public class Solution {
+public class SimplifyPath {
 	private static class Stack {
 
 		LinkNode top;

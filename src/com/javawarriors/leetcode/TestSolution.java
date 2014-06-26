@@ -2,7 +2,7 @@ package com.javawarriors.leetcode;
 
 public class TestSolution {
 	public static void main(String[] args) {
-		Solution sol = new Solution();
-		//System.out.println(sol.reverse(321));
+		BestTimetoBuyandSellStock obj = new BestTimetoBuyandSellStock();
+		System.out.println(obj.maxProfit(new int[] {1,7,2,4}));
 	}
 }
