@@ -1,8 +1,0 @@
-.DS_Store
-.settings/
-*.jar
-*.war
-*.ear
-*.class
-/build
-/bin

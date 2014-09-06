@@ -53,7 +53,7 @@ public class SimpleThreads {
 
         threadMessage("Starting MessageLoop thread");
         long startTime = System.currentTimeMillis();
-        Thread t = new Thread(new MessageLoop());
+        Thread t = new Thread(new MessageLoop(), "MessageLoop");
         t.start();
 
         threadMessage("Waiting for MessageLoop thread to finish");
