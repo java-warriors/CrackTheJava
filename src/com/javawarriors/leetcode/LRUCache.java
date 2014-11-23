@@ -4,9 +4,9 @@ import java.util.HashMap;
 
 public class LRUCache {
 	private static class LinkedListM {
-		private transient Entry header = new Entry(null, null, null);
+		private Entry header = new Entry(null, null, null);
 		
-		private transient int size = 0;
+		private int size = 0;
 
 		LinkedListM(){
 			header.next = header.previous = header;

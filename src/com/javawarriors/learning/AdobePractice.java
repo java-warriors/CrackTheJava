@@ -1,10 +1,5 @@
 package com.javawarriors.learning;
 
-import java.util.ArrayList;
-import java.util.Arrays;
-
-import com.javawarriors.leetcode.PalindromeSolution;
-
 public class AdobePractice {
 	public static class Node {
 		int value;
@@ -102,6 +97,6 @@ public class AdobePractice {
 
 		// System.out.println(isSubsetSumPossible(new int[] {10,1,2,7,6,1,5},
 		// 50));
-		// System.out.println(isIntegerPalindrome(12311));
+		System.out.println(isIntegerPalindrome(12311));
 	}
 }
